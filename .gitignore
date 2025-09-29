@@ -151,3 +151,45 @@ specs/**/draft-*
 specs/**/work-*
 .spec-cache/
 .tmp/
+
+# Electron cache and build artifacts
+${env.ELECTRON_CACHE}/
+electron-builder.yml.backup
+*.backup
+
+# Electron downloads and cache
+electron-v*.zip
+node_modules/.cache/
+~/.cache/electron*
+
+# Build outputs and caches
+out/
+dist/
+.webpack/
+build/
+
+# Electron cache directories
+${env.ELECTRON_CACHE}/
+~/.cache/electron/
+~/.cache/electron-builder/
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
